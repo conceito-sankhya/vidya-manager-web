@@ -10,7 +10,8 @@ export default function TestePage() {
         <Input.Text label="Nome" />
         <Input.TextAreaInput label="Descrição" />
         <Input.SelectInput label="Tipo de negócio" selectOptions={selectOptions} />
-        <Input.RadioInput labelItems={radioItemOptions} error="Erro" />
+        <Input.RadioInput labelItems={radioItemOptions} />
+        <Input.SwitchInput label="Utiliza nome fantasia pessoa fisica" />
       </div>
     </div>
   );
