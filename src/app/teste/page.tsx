@@ -1,6 +1,7 @@
 import Input from "@/components/input/input";
 
 const selectOptions = ["opção 1", "opção 2", "opção 3", "opção 4"];
+const radioItemOptions = ["opção 1", "opção 2"];
 
 export default function TestePage() {
   return (
@@ -9,6 +10,7 @@ export default function TestePage() {
         <Input.Text label="Nome" />
         <Input.TextAreaInput label="Descrição" />
         <Input.SelectInput label="Tipo de negócio" selectOptions={selectOptions} />
+        <Input.RadioInput labelItems={radioItemOptions} error="Erro" />
       </div>
     </div>
   );
