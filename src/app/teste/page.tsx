@@ -2,6 +2,24 @@ import Input from "@/components/input/input";
 
 const selectOptions = ["opção 1", "opção 2", "opção 3", "opção 4"];
 const radioItemOptions = ["opção 1", "opção 2"];
+const autocompleteOptions = [
+  {
+    value: "opção 1",
+    autocompleteOptionLabel: "Opção 1",
+  },
+  {
+    value: "opção 2",
+    autocompleteOptionLabel: "Opção 2",
+  },
+  {
+    value: "opção 3",
+    autocompleteOptionLabel: "Opção 3",
+  },
+  {
+    value: "opção 4",
+    autocompleteOptionLabel: "Opção 4",
+  }
+];
 
 export default function TestePage() {
   return (
@@ -12,6 +30,7 @@ export default function TestePage() {
         <Input.SelectInput label="Tipo de negócio" selectOptions={selectOptions} />
         <Input.RadioInput labelItems={radioItemOptions} />
         <Input.SwitchInput label="Utiliza nome fantasia pessoa fisica" />
+        <Input.AutocompleteInput autocompleteOptions={autocompleteOptions} label="Permitir anexar arquivo no cadastro de clientes?" />
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import AutocompleteInput from "./autocomplete/autocomplete.input";
 import RadioInput from "./radio/radio.input";
 import SelectInput from "./select/select.input";
 import SwitchInput from "./switch/switch.input";
@@ -9,7 +10,8 @@ const Input = {
   TextAreaInput,
   SelectInput,
   RadioInput,
-  SwitchInput
+  SwitchInput,
+  AutocompleteInput
 };
 
 export default Input;
