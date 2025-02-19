@@ -9,10 +9,15 @@ import {
 } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
 
+interface SelectInputOptions {
+    value: string,
+    selectOptionLabel: string
+}
+
 interface SelectInputProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
     label?: string,
     error?: string,
-    selectOptions: string[]
+    selectOptions: SelectInputOptions[]
 }
 
 const SelectInput: React.FC<SelectInputProps> = ({
@@ -32,7 +37,7 @@ const SelectInput: React.FC<SelectInputProps> = ({
                     <SelectGroup>
                         {
                             selectOptions.map((option) => (
-                                <SelectItem  key={option} value={option.toLowerCase()}>{option}</SelectItem>
+                                <SelectItem key={option.value} value={option.value}>{option.selectOptionLabel}</SelectItem>
                             ))
                         }
                     </SelectGroup>

@@ -1,6 +1,23 @@
 import Input from "@/components/input/input";
 
-const selectOptions = ["opção 1", "opção 2", "opção 3", "opção 4"];
+const selectOptions = [
+  {
+    value: "opção 1",
+    selectOptionLabel: "Opção 1",
+  },
+  {
+    value: "opção 2",
+    selectOptionLabel: "Opção 2",
+  },
+  {
+    value: "opção 3",
+    selectOptionLabel: "Opção 3",
+  },
+  {
+    value: "opção 4",
+    selectOptionLabel: "Opção 4",
+  }
+];
 const radioItemOptions = ["opção 1", "opção 2"];
 const autocompleteOptions = [
   {
